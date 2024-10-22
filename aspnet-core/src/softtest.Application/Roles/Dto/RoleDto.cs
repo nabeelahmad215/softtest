@@ -9,10 +9,12 @@ namespace softtest.Roles.Dto
 {
     public class RoleDto : EntityDto<int>
     {
+        /*Git Comment*/
         [Required]
         [StringLength(AbpRoleBase.MaxNameLength)]
         public string Name { get; set; }
         
+
         [Required]
         [StringLength(AbpRoleBase.MaxDisplayNameLength)]
         public string DisplayName { get; set; }
